@@ -3,7 +3,7 @@ import DishCard from "./DishCard";
 
 const Dishes = () => {
   return (
-    <section className="container mx-auto py-16" id="dishes">
+    <section className="container mx-auto py-16 px-8" id="dishes">
       <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter lg:text-4xl">
         Our Dishes
       </h2>
