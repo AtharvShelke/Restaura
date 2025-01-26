@@ -18,7 +18,6 @@ export default function App() {
       smooth: true, // Enable smooth scrolling
     });
 
-    // Cleanup on component unmount
     return () => {
       locomotiveScroll.destroy();
     };
