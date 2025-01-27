@@ -1,8 +1,8 @@
 // assets/customers.js
-import customer1 from "./customer1.jpeg";
-import customer2 from "./customer2.jpeg";
-import customer3 from "./customer3.jpeg";
-import customer4 from "./customer4.jpeg";
+import customer1 from "./customer1pic.jpg";
+import customer2 from "./customer2pic.jpg";
+import customer3 from "./customer3pic.jpg";
+import customer4 from "./customer4pic.jpg";
 
 const customerImages = [
   { src: customer1, alt: "Customer 1" },

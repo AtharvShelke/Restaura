@@ -1,4 +1,4 @@
-import about from "../assets/about.jpeg";
+import about from "../assets/aboutpic.avif";
 import { ABOUT } from "../constants";
 import { motion } from "framer-motion";
 

@@ -9,25 +9,26 @@ const DishCard = ({ project: { image, title, description } }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="rounded-3xl shadow-md overflow-hidden"
+      className="rounded-3xl shadow-md overflow-hidden bg-neutral-900"
     >
       {/* Image Section */}
-      <div className="w-full h-64 relative">
+      <div className="relative">
         <LazyLoadImage
           src={image || "/placeholder.jpg"}
           alt={title ? `${title} image` : "Dish image"}
-          effect="blur" // Adds a blur effect while the image is loading
-          width={500} // Explicit width for layout stability
-          height={300} // Explicit height to prevent layout shifts
-          className="rounded-3xl object-cover w-full h-full"
+          effect="blur"
+          width="100%"
+          height="auto"
+          className="rounded-t-3xl object-cover max-h-64 w-full"
         />
       </div>
 
-      <div className="p-4">
-        <h3 className="mb-2 text-2xl font-bold tracking-tighter text-neutral-200">
+      {/* Text Section */}
+      <div className="p-6">
+        <h3 className="mb-2 text-xl font-bold tracking-tight text-neutral-200">
           {title}
         </h3>
-        <p className="text-sm text-neutral-600">{description}</p>
+        <p className="text-sm text-neutral-500">{description}</p>
       </div>
     </motion.article>
   );

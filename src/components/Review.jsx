@@ -1,6 +1,6 @@
 import { REVIEW } from "../constants";
 import { motion } from "framer-motion";
-import xaviour from "../assets/xaviour.jpeg";
+import xaviour from "../assets/persone.jpg";
 import customerImages from "../assets/customers.js"; // Import all customer images dynamically
 
 const containerVariants = {
