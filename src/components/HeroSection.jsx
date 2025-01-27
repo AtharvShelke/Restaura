@@ -11,7 +11,7 @@ const HeroSection = () => {
             const offsetTop = targetElement.offsetTop - 80;
             window.scrollTo({
                 top: offsetTop,
-                behavior: "smooth"
+                behavior: "smooth",
             });
         }
     };
@@ -38,30 +38,26 @@ const HeroSection = () => {
             <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-black/60 to-black"></div>
 
             {/* Content */}
-            <div className="absolute z-20 flex flex-col items-start text-white bottom-10 left-10 space-y-4">
+            <div className="absolute z-20 flex flex-col items-start text-white bottom-5 sm:bottom-10 left-5 sm:left-10 space-y-3 sm:space-y-4">
                 {/* Logo */}
                 <motion.img
                     src={logo}
                     alt="Restaura Logo"
-                    className="w-[30rem] lg:w-[45rem]"
+                    className="w-40 sm:w-60 lg:w-[30rem] xl:w-[45rem]"
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: 'easeInOut' }}
                 />
 
-                
-
                 {/* Tagline */}
                 <motion.p
-                    className="text-lg lg:text-xl tracking-wide"
+                    className="text-sm sm:text-base md:text-lg lg:text-xl tracking-wide"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.4, delay: 0.2, ease: 'easeInOut' }}
                 >
                     Fresh. Flavorful. Fantastic.
                 </motion.p>
-
-                
             </div>
         </section>
     );
