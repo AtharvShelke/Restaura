@@ -14,8 +14,10 @@ export default function App() {
   useEffect(() => {
     // Initialize Locomotive Scroll
     const locomotiveScroll = new LocomotiveScroll({
-      el: document.querySelector(".scroll-container"), // Target the scroll container
-      smooth: true, // Enable smooth scrolling
+      el: document.querySelector(".scroll-container"),
+      smooth: true,
+      multiplier: 1,
+      class: "is-reveal",
     });
 
     return () => {
@@ -24,7 +26,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="overflow-y-hidden text-neutral-200 antialiased">
+    <main className="overflow-x-hidden text-neutral-200 antialiased selection:bg-rose-300 selection:text-black">
       <div className="scroll-container">
         <HeroSection />
         <Navbar />
